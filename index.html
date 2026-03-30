@@ -18,18 +18,18 @@
     --text-light: #6b7c93;
     --border: #dde3ed;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--cream);
     color: var(--text);
     overflow-x: hidden;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -59,7 +59,7 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--gold); }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -154,7 +154,7 @@
     gap: 0.5rem;
   }
   .photo-placeholder svg { opacity: 0.3; }
-
+ 
   /* SECTIONS */
   section { padding: 90px 8%; }
   .section-label {
@@ -172,7 +172,7 @@
     margin-bottom: 3rem;
     font-weight: 700;
   }
-
+ 
   /* KOMPETENSER */
   #skills { background: var(--white); }
   .skills-grid {
@@ -205,7 +205,7 @@
     font-size: 0.82rem;
     font-weight: 500;
   }
-
+ 
   /* UTBILDNING */
   #education { background: var(--cream); }
   .timeline { position: relative; max-width: 780px; }
@@ -253,7 +253,7 @@
     color: var(--text);
     font-weight: 300;
   }
-
+ 
   /* PROJEKT */
   #projects { background: var(--white); }
   .projects-grid {
@@ -332,7 +332,7 @@
     transition: gap 0.2s;
   }
   .project-link:hover { gap: 0.5rem; }
-
+ 
   /* ARBETSLIVSERFARENHET */
   #experience { background: var(--navy); }
   #experience .section-title { color: var(--white); }
@@ -377,7 +377,7 @@
     color: rgba(255,255,255,0.6);
     font-weight: 300;
   }
-
+ 
   /* KONTAKT */
   #contact { background: var(--cream); }
   .contact-wrapper {
@@ -450,7 +450,7 @@
     align-self: flex-start;
   }
   .btn-submit:hover { background: var(--navy-light); }
-
+ 
   /* FOOTER */
   footer {
     background: var(--navy);
@@ -469,7 +469,7 @@
     font-size: 1rem;
     opacity: 0.6;
   }
-
+ 
   /* COVER LETTER */
   #cover { background: var(--white); }
   .cover-wrapper {
@@ -509,7 +509,7 @@
     .cover-wrapper { grid-template-columns: 1fr; gap: 1.5rem; }
     .cover-meta { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; padding-bottom: 1.5rem; }
   }
-
+ 
   /* SCROLL ANIMATION */
   .fade-in {
     opacity: 0;
@@ -517,7 +517,7 @@
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero::before { display: none; }
@@ -534,7 +534,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">My Olsson Roos</a>
@@ -547,7 +547,7 @@
     <li><a href="#contact">Kontakt</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section id="hero" class="hero">
   <div class="hero-content">
@@ -563,13 +563,12 @@
     </div>
   </div>
   <div class="hero-photo-area">
-    <div class="photo-placeholder">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-      <span>Ditt foto</span>
+    <div class="photo-placeholder" style="background:none; border:2px solid rgba(201,168,76,0.4); overflow:hidden; border-radius:4px;">
+      <img src="profil.png" style="width:240px;height:290px;object-fit:cover;object-position:center top;" alt="My Olsson Roos">
     </div>
   </div>
 </section>
-
+ 
 <!-- KOMPETENSER -->
 <section id="skills">
   <p class="section-label">Vad jag kan</p>
@@ -634,72 +633,72 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- UTBILDNING -->
 <section id="education">
   <p class="section-label">Akademisk bakgrund</p>
   <h2 class="section-title">Utbildning</h2>
   <div class="timeline">
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Pågående · Augusti 2025 – Maj 2027</p>
       <h3 class="timeline-role">Systemutvecklare – inriktning säker kod</h3>
       <p class="timeline-org">Yrkeshögskola · 400 YH-poäng</p>
       <p class="timeline-desc">Tvåårig yrkeshögskoleutbildning med fokus på systemutveckling i .NET-ekosystemet, säker arkitektur och agil metodik. Utbildningen varvar teori med praktiska projekt och avslutas med två LIA-perioder (Lärande i Arbete).</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · C#/.NET grund &amp; fortsättning</p>
       <h3 class="timeline-role">Programmering med C# och .NET</h3>
       <p class="timeline-org">95 YH-poäng</p>
       <p class="timeline-desc">Från grundläggande syntax och objektorienterad programmering till fördjupade kunskaper om .NET-ramverket, datakommunikation, nätverksapplikationer och containerbaserad utveckling med Azure.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · 40 YH-poäng</p>
       <h3 class="timeline-role">Säker systemutveckling</h3>
       <p class="timeline-org">Specialisering</p>
       <p class="timeline-desc">Design och utveckling av säkerhetslösningar, hotanalys, Privacy by Design och ITIL ur ett säkerhetsperspektiv. Fokus på att bygga system som uppfyller både funktionella och säkerhetsmässiga krav.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · 40 YH-poäng</p>
       <h3 class="timeline-role">Utveckling av webbapplikationer</h3>
       <p class="timeline-org">Webb &amp; Frontend</p>
       <p class="timeline-desc">HTML, CSS, JavaScript och C# för responsiva webbapplikationer. Genomgång av ramverk som ASP.NET, Angular och React.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · 30 YH-poäng</p>
       <h3 class="timeline-role">Agil systemutveckling &amp; ämnesövergripande projekt</h3>
       <p class="timeline-org">Metodik &amp; Projektledning</p>
       <p class="timeline-desc">Agila metoder i praktiken — Scrum, DevOps, kravhantering, konsultrollen och tvärfunktionellt projektarbete från planering till leverans.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · 25 YH-poäng</p>
       <h3 class="timeline-role">Databasteknik</h3>
       <p class="timeline-org">Data &amp; Lagring</p>
       <p class="timeline-desc">Databasdesign, datamodellering och SQL. Analys av för- och nackdelar med olika typer av databassystem.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">Kurs · 20 YH-poäng</p>
       <h3 class="timeline-role">Testning</h3>
       <p class="timeline-org">Kvalitet &amp; QA</p>
       <p class="timeline-desc">Testprocessen från planering till genomförande — testdesign, testdriven utveckling (TDD) och olika testmetoder i agila projekt.</p>
     </div>
-
+ 
     <div class="timeline-item fade-in">
       <p class="timeline-year">LIA 1 &amp; LIA 2 · 120 YH-poäng</p>
       <h3 class="timeline-role">Lärande i arbete</h3>
       <p class="timeline-org">Praktik i verklig miljö</p>
       <p class="timeline-desc">Två praktikperioder ute hos arbetsgivare — LIA 1 med fokus på .NET och databasteknik, LIA 2 med fokus på säker systemutveckling och självständigt ansvar i konsultrollen.</p>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- PROJEKT -->
 <section id="projects">
   <p class="section-label">Vad jag byggt</p>
@@ -753,7 +752,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ARBETSLIVSERFARENHET -->
 <section id="experience">
   <p class="section-label">Min bakgrund</p>
@@ -773,7 +772,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PERSONLIGT BREV -->
 <section id="cover">
   <p class="section-label">Varför just mig</p>
@@ -796,7 +795,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- KONTAKT -->
 <section id="contact">
   <p class="section-label">Hör av dig</p>
@@ -828,13 +827,13 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 My Olsson Roos</p>
   <span class="footer-logo">MOR</span>
 </footer>
-
+ 
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -844,7 +843,7 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
+ 
   // Sätt dagens datum på personligt brev
   const dateEl = document.getElementById('cover-date');
   if (dateEl) {
